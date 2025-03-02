@@ -1,0 +1,413 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.a{
+    display: inline-block
+
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #333;
+}
+.chat-container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    background: #0078d7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #333333;
+}
+
+.message {
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background: #d1e7dd;
+    align-self: flex-end;
+}
+
+.message.agent {
+    background: #f8d7da;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+
+.chat-input button {
+    padding: 10px;
+    border: none;
+    background: #0078d7;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Header */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #660099;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #660099;
+}
+tr:hover {
+    background-color: #afa5a5;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #660099;
+    color: black;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    padding:5px;
+}
+
+.header .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width:600px;
+}
+
+.header .search-bar button {
+    padding: 5px 20px;
+    border: none;
+    background-color: white;
+    color: #ff6600;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .user-actions span {
+    margin-left: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Promotions */
+.promotions {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffd700;
+    padding: 10px;
+}
+
+.promo-item {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+.product-card:hover {
+    transform: scale(1.05);
+
+}
+.product-card img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333333;
+
+}
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+.product-card span {
+    font-weight: bold;
+    color: #e74c3c;
+    display: block;
+    margin: 10px 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Main Content */
+.main-content {
+    padding: 20px;
+    background-color: #660099;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+}
+.urundetay {
+    padding: 20px;
+    background-color: #660099;
+    color: #dddddd;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+
+}
+.urunbilgi{
+    align-content: center;
+    justify-content: center;
+
+
+}
+.main {
+    padding: 20px;
+    background-color: #660099;
+    color: #ffffff;
+    height: 500px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-highlight {
+    margin-top: 20px;
+}
+
+.product-highlight h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.emailcheck{
+    height: 400px;
+    width: 800px;
+    align-content: center;
+    background-color: cornflowerblue;
+
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    height: 100px;
+}
+.form {
+
+    background-color: #660099;
+    color: white;
+    padding: 10px 20px;
+    height: 500px;
+    width: 500px;
+
+}
+
+.button {
+    background-color: #4CAF50; /* Yeşil arka plan */
+    border: none; /* Sınır yok */
+    color: white; /* Yazı rengi beyaz */
+    padding: 15px 32px; /* İç boşluk */
+    text-align: center; /* Yazıyı ortala */
+    text-decoration: none; /* Alt çizgi yok */
+    display: inline-block; /* Butonu satır içinde tut */
+    font-size: 16px; /* Yazı boyutu */
+    margin: 4px 2px; /* Buton arası mesafe */
+    cursor: pointer; /* Fare işareti buton üzerinde */
+    border-radius: 12px; /* Köşe yuvarlama */
+    transition: background-color 0.3s, transform 0.3s; /* Geçiş efektleri */
+}
+
+/* Buton üzerine gelindiğinde */
+.button:hover {
+    background-color: #45a049; /* Renk biraz daha koyulaşır */
+    transform: translateY(-2px); /* Hafif yukarı kayma */
+}
+
+/* Buton tıklanırken */
+.button:active {
+    background-color: #3e8e41; /* Tıklandığında daha koyu yeşil */
+    transform: translateY(0); /* Kayma efekti yok olur */
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.islem-listesi {
+    display: none; /* Liste başlangıçta gizli */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.islem-listesi a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.islem-listesi a:hover {
+    background-color: #e0e0e0;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e9f7ff;
+}
+
+.chat-message strong {
+    color: #0056a3;
+}
+
+.chat-message:nth-child(odd) {
+    background-color: #e3f2fd;
+}

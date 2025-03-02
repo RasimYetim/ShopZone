@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>KullaniciEkleServlet</servlet-name>
+        <servlet-class>servlet.kullaniciEkleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KullaniciEkleServlet</servlet-name>
+        <url-pattern>/KullaniciEkleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Emailcheck</servlet-name>
+        <servlet-class>servlet.emailcheck</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Emailcheck</servlet-name>
+        <url-pattern>/emailcheck</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Giris</servlet-name>
+        <servlet-class>servlet.giris</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Giris</servlet-name>
+        <url-pattern>/giris</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>servlet.admin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+        </servlet-mapping>
+
+    <servlet>
+        <servlet-name>urunekle</servlet-name>
+        <servlet-class>servlet.UrunEkleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>urunekle</servlet-name>
+        <url-pattern>/UrunEkleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sepeteekle</servlet-name>
+        <servlet-class>servlet.SepeteEklee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sepeteekle</servlet-name>
+        <url-pattern>/SepeteEklee</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Yorumekleservlet</servlet-name>
+        <servlet-class>servlet.YorumEkleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Yorumekleservlet</servlet-name>
+        <url-pattern>/YorumEkleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>YorumGosterServlet</servlet-name>
+        <servlet-class>servlet.YorumGosterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>YorumGosterServlet</servlet-name>
+        <url-pattern>/YorumGosterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>servlet.CanliDestekServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/CanliDestekServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>YorumYanitEkleServlet</servlet-name>
+        <servlet-class>servlet.YorumYanitEkleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>YorumYanitEkleServlet</servlet-name>
+        <url-pattern>/YorumYanitEkleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>siparis</servlet-name>
+        <servlet-class>servlet.SiparislerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>siparis</servlet-name>
+        <url-pattern>/SiparislerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>urunduzenle</servlet-name>
+        <servlet-class>servlet.UrunDuzenleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>urunduzenle</servlet-name>
+        <url-pattern>/UrunDuzenleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>urunresim</servlet-name>
+        <servlet-class>servlet.UrunResimEkleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>urunresim</servlet-name>
+        <url-pattern>/UrunResimEkleServlet</url-pattern>
+    </servlet-mapping>
+
+    <resource-ref>
+        <description>SQL Server Database</description>
+        <res-ref-name>jdbc/DBMS</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+</web-app>
